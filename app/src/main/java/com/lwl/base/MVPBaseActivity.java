@@ -75,8 +75,10 @@ public abstract class MVPBaseActivity<V, T extends BasePresenter<V>> extends App
             transaction.show(fragmentByTag);
         }else{
             //新建
-            transaction.add(frameId, fragment, fragment.getClass().getName());
-            transaction.show(fragment);
+//            transaction.add(frameId, fragment, fragment.getClass().getName());
+//            transaction.show(fragment);
+            fragmentByTag = fragment;
+            transaction.add(frameId, fragmentByTag, fragmentByTag.getClass().getName());
         }
         transaction.commit();
         showFragment = fragmentByTag;
