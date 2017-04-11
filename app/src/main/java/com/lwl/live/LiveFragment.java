@@ -1,0 +1,27 @@
+package com.lwl.live;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.lwl.neteasenews.R;
+
+/**
+ * Created by uk on 2017/4/7.
+ */
+
+public class LiveFragment extends Fragment{
+
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fg_live, container, false);
+
+        return view;
+    }
+}
