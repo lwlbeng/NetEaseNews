@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/fg_live_re_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        tools:src="@drawable/p1"/>
+
+
+
+        <TextView
+            android:id="@+id/fg_live_re_item_tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#aa131313"
+            android:padding="4dp"
+            android:textSize="12sp"
+            tools:text="标题"/>
+
+
+    <TextView
+        android:id="@+id/fg_live_re_item_roomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="标题"/>
+
+    <ImageView
+        android:id="@+id/fg_live_re_item_liveStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        tools:src="@drawable/a6h"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:background="@drawable/back_box"
+        android:layout_toRightOf="@id/fg_live_re_item_liveStatus">
+
+        <TextView
+            android:id="@+id/fg_live_re_item_userCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="10sp"
+            tools:text="参与人数"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -5,10 +5,10 @@ import android.widget.RadioGroup;
 import com.lwl.base.BasePresenter;
 import com.lwl.base.MVPBaseActivity;
 import com.lwl.home.view.HomeFragment;
-import com.lwl.live.LiveFragment;
 import com.lwl.mine.MineFragment;
 import com.lwl.neteasenews.R;
 import com.lwl.video.view.VideoFragment;
+import com.lwl.live.LiveFragment;
 
 import butterknife.Bind;
 
@@ -28,6 +28,7 @@ public class MainActivity extends MVPBaseActivity {
 
     @Override
     protected void initListener() {
+
         mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -48,5 +49,7 @@ public class MainActivity extends MVPBaseActivity {
                 }
             }
         });
+
+        mRadioGroup.getChildAt(0).performClick();
     }
 }
